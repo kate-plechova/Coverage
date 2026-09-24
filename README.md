@@ -20,6 +20,29 @@ Build the Cython extensions from the repository root:
 
     python src/setup_lol_unified.py build_ext --inplace
 
+
+## Quick test with synthetic data
+
+A small synthetic HLA dataset is included in:
+
+    examples/synthetic_hla.csv
+
+It can be used to verify that the repository is installed correctly and that the coverage pipeline runs without access to the restricted study datasets.
+
+Example:
+
+    python -m scripts.run_coverage single \
+      --donors examples/synthetic_hla.csv \
+      --patients examples/synthetic_hla.csv \
+      --scenario HvG \
+      --mismatch-limit 3 \
+      --coverage 80 \
+      --method both
+
+The same synthetic file can also be used with `scenario1`, `scenario2`, and `GvH`.
+
+The synthetic dataset is provided only for testing and demonstration. It does not represent the study populations or reproduce the manuscript results.
+
 ## Available scenarios
 
 The runner currently supports:
