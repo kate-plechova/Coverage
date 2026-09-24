@@ -1,0 +1,42 @@
+{
+  "scenario1": {
+    "mismatch_mode": "per_class",
+    "use_class1": false,
+    "use_class2": true,
+    "missmatch_c1": 6,
+    "missmatch_c2": 0,
+    "use_kir": true,
+    "use_knockout": false,
+    "scenario": "scenario1"
+  },
+  "scenario2": {
+    "mismatch_mode": "per_class",
+    "use_class1": true,
+    "use_class2": false,
+    "missmatch_c1": 1,
+    "class1_size": 4,
+    "alleles_in_donor": "A*02:01",
+    "alleles_in_patient": "A*02:01",
+    "check_homozygot": true,
+    "use_knockout": false,
+    "scenario": "scenario2"
+  },
+  "GvH": {
+    "mismatch_mode": "total",
+    "use_class1": true,
+    "use_class2": true,
+    "total_mismatch_limit": 3,
+    "mismatch_direction": "donor_to_patient",
+    "use_knockout": false,
+    "scenario": "total_mismatch_donor_to_patient"
+  },
+  "HvG": {
+    "mismatch_mode": "total",
+    "use_class1": true,
+    "use_class2": true,
+    "total_mismatch_limit": 3,
+    "mismatch_direction": "patient_to_donor",
+    "use_knockout": false,
+    "scenario": "total_mismatch_patient_to_donor"
+  }
+}

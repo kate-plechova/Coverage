@@ -1,0 +1,29 @@
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Local / restricted data
+data/
+
+# Generated outputs
+runs/
+results/
+results_csv/
+multi_results/
+logs/
+
+# Generated plots / temporary files
+*.png
+temp_plot_res*
+.DS_Store
+
+# Compiled extensions and build artifacts
+*.so
+build/
+src/_lol5_core.cpp
+src/_lol_unified_core.cpp

@@ -1,0 +1,44 @@
+{
+  "scenario": "scenario1",
+
+  "donors_input_file": "data/donors.csv",
+  "recipients_input_file": "data/patients.csv",
+
+  "graph_backend": "lol_unified",
+
+  "percentage_from_the_population": 60,
+  "output_file": "results.txt",
+
+  "use_class1": true,
+  "use_class2": true,
+
+  "class1_size": 6,
+  "class2_size": 4,
+
+  "missmatch_c1": 0,
+  "missmatch_c2": 0,
+  "missmatch_pat_c1": null,
+  "missmatch_pat_c2": null,
+
+  "mismatch_mode": "total",
+  "total_mismatch_limit": 0,
+  "mismatch_direction": "donor_to_patient",
+
+  "use_kir": false,
+  "kir_rule": "different",
+
+  "use_knockout": false,
+  "knockout_cost": 1,
+
+  "check_homozygot": false,
+
+  "alleles_in_donor": null,
+  "alleles_in_patient": null,
+
+  "prior_for_4_match": false,
+  "calculate_matches": false,
+
+  "directed": true,
+
+  "random_seed": 12345
+}
